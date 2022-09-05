@@ -1,0 +1,29 @@
+1.該方法是在GAS平台上建立專案，建立google script +html語言(適應手機介面RWD)
+https://script.google.com/
+
+
+※注意，該方式需要上傳至雲端，故須開放Web Access(80/443)，如需要在Excel新增欄位，記得Html的標籤name要跟Excel相同，修改後須重新部屬
+
+
+
+2022盤點：
+
+外網:
+https://script.google.com/macros/s/AKfycbwp2fx9PY0uDyp2jEPXXkHZdeBdfX5zNS6vtj7oUqPQcG2KIQyeVCSdKq8nDWPn_N5u/exec
+
+和美內網:
+http://myyaoi/INV/
+
+彰濱內網:
+http://a-myyaoi/INV/
+
+
+Excel下載:
+https://docs.google.com/spreadsheets/d/1U0Md0wQDX5ThKu7iiQKqSF3bVq8E2jmDrB-jrwReBMo/edit?usp=sharing
+
+
+前置準備：
+
+1.一台可上網的電腦筆電
+2.一台無線條碼掃描器(支援一維 Code128)
+3.使用以上網址登入操作

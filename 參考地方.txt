@@ -1,0 +1,34 @@
+https://serratus.github.io/quaggaJS/
+
+https://serratus.github.io/quaggaJS/examples/
+
+WebRTC API
+
+每一行彼此靠近並且有相似的角度
+
+https://oberhofer.co/how-barcode-localization-works-in-quaggajs/
+
+WebRTC 需要在https://	 (http://僅localhost)
+https://groups.google.com/g/discuss-webrtc/c/sq5CVmY69sc
+
+
+getUserMedia/Stream API 支援矩陣
+https://caniuse.com/stream
+barcode 解決方案
+http://www.webondevices.com/javascript-barcode-scanner/
+
+其他解決方案
+http://www.webondevices.com/
+
+
+getUserMedia()
+https://developer.mozilla.org/en-US/docs/Web/API/Navigator/getUserMedia
+
+https://live.browserstack.com/dashboard#os=iOS&os_version=15.0&device_browser=safari&zoom_to_fit=true&full_screen=true&url=https%3A%2F%2Fwww.google.com%2F%3Fgws_rd%3Dssl&speed=1
+
+
+HTML5 JS Barcode
+https://www.dynamsoft.com/codepool/html5-barcode-reader-desktop-mobile-camera.html
+
+
+https://github.com/phonegap/phonegap-plugin-barcodescanner

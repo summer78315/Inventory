@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta name="viewport" , charset="utf-8" , content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 25px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    input[type=text],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+
+    }
+
+    input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>盤點系統</h3>
+  <div class="container">
+    <form action="#" method="post" name="google">
+      <label for="Barcode">條碼</label>
+      <input style="font-size:25px;color:blue;" type="text" id="Barcode" name="固資編號" placeholder="Your Barcode.."
+        autofocus>
+      <label for="Date">盤點日期</label>
+      <input style="font-size:25px;color:blue;" type="text" id="Date" name="盤點日期" onload="getDate()">
+
+      <label for="Factory">廠別</label>
+      <select id="Factory" name="廠別">
+        <option style="font-size:25px;color:blue;" value="和美廠">和美廠</option>
+        <option style="font-size:25px;color:blue;" value="彰濱廠">彰濱廠</option>
+      </select>
+      <label for="Zone">區域</label>
+      <input style="font-size:25px;color:blue;" type="text" id="Zone" name="區域">
+      <label for="Remark">備註</label>
+      <textarea style="font-size:25px;color:blue;" id="Remark" name="備註" style="height:200px"></textarea>
+      <input type="submit" value="送出" 　name="submit">
+    </form>
+
+    <script type="text/javascript">
+      // 在GAS新增部屬成網頁應用程式後。再將網址貼到下列
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzIiNdsAI-L5_8vA53n5FF7Z-YHNytSSv03aj3i5RqFA0048LeuJN-Lo5DeR1cXsXYr/exec'
+
+      const form = document.forms['google']
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => document.getElementById('Barcode').value = null, document.getElementById('Remark').value = null)
+          .catch(error => console.error('Error!', error.message))
+      })
+      document.getElementById('Date').value = new Date().toISOString().substring(0, 10);
+    </script>
+</body>
+
+</html>
